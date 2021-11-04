@@ -1,0 +1,34 @@
+div.column {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    height: 32px;
+    width: 22px;
+    margin: 7px;
+    outline: none;
+    border: none;
+    background: #fff;
+    cursor: pointer;
+}
+
+button.yellow {
+    background-image: url(https://raw.githubusercontent.com/trecno/browser-addon/main/images/cursor_yellow.png);
+}
+
+button.red {
+    background-image: url(https://raw.githubusercontent.com/trecno/browser-addon/main/images/cursor_red.png);
+}
+
+button.blue {
+    background-image: url(https://raw.githubusercontent.com/trecno/browser-addon/main/images/cursor_blue.png);
+}
+
+button.green {
+    background-image: url(https://raw.githubusercontent.com/trecno/browser-addon/main/images/cursor_green.png);
+}
+
+button.gray {
+    background-image: url(https://raw.githubusercontent.com/trecno/browser-addon/main/images/cursor_gray.png);
+}
