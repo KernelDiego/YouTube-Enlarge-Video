@@ -1,34 +1,25 @@
-div.column {
-    display: flex;
-    flex-direction: column;
+#masthead-container.ytd-app {
+  display: none !important;
 }
 
-button {
-    height: 32px;
-    width: 22px;
-    margin: 7px;
-    outline: none;
-    border: none;
-    background: #fff;
-    cursor: pointer;
+ytd-watch-flexy[theater] #player-theater-container.ytd-watch-flexy,
+ytd-watch-flexy[fullscreen] #player-theater-container.ytd-watch-flexy {
+  position: relative !important;
+  max-height: 100vh !important;
 }
 
-button.yellow {
-    background-image: url(https://raw.githubusercontent.com/trecno/browser-addon/main/images/cursor_yellow.png);
+#movie_player > div.html5-video-container > video {
+  top: 0px !important;
 }
 
-button.red {
-    background-image: url(https://raw.githubusercontent.com/trecno/browser-addon/main/images/cursor_red.png);
+body > ytd-app {
+  --ytd-app-fullerscreen-scrollbar-width: 0 !important;
+  --ytd-masthead-height: 0 !important;
 }
 
-button.blue {
-    background-image: url(https://raw.githubusercontent.com/trecno/browser-addon/main/images/cursor_blue.png);
-}
-
-button.green {
-    background-image: url(https://raw.githubusercontent.com/trecno/browser-addon/main/images/cursor_green.png);
-}
-
-button.gray {
-    background-image: url(https://raw.githubusercontent.com/trecno/browser-addon/main/images/cursor_gray.png);
+ytd-watch-flexy:not([theater]):not([fullscreen]):not([no-top-margin])
+  #primary.ytd-watch-flexy,
+ytd-watch-flexy:not([theater]):not([fullscreen]):not([no-top-margin])
+  #secondary.ytd-watch-flexy {
+    padding-top: 0 !important;
 }
